@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Premium Developer</title>
+    <meta name="description" content="A premium portfolio showcasing software and hardware projects.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cert-list li:hover {
+            background: rgba(0, 242, 255, 0.1) !important;
+            border-color: var(--accent-primary) !important;
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 242, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="blob"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="glass"
+        style="position: fixed; inset: 0; z-index: 9999; display: flex; justify-content: center; align-items: center; background: var(--bg-color);">
+        <div
+            style="font-size: 2rem; font-weight: 700; background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 1.5s infinite;">
+            LIKITHA HARSHINI DEVI
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">PORTFOLIO</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content reveal">
+            <div class="profile-container">
+                <img src="assets/profile.jpeg" alt="Profile Photo" class="profile-img">
+            </div>
+            <h1>POSHAM LIKITHA HARSHINI DEVI</h1>
+            <p class="tagline">Aspiring Software Engineer | AI Enthusiast</p>
+            <p class="intro">
+                I am a passionate software developer dedicated to building innovative solutions
+                that bridge the gap between complex technology and intuitive user experiences.
+                I enjoy transforming complex problems into user-friendly applications.
+                Constantly learning and adapting, I aim to contribute to impactful technologies and grow as a developer.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="assets/resume%20updated.pdf" class="btn btn-secondary" target="_blank" download>Download
+                    Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid"
+                style="grid-template-columns: 1fr; text-align: center; max-width: 800px; margin: 0 auto;">
+                <div class="about-text reveal">
+                    <p>
+                        I am a Final year Computer Science engineering student with a deep passion for software
+                        engineering and problem-solving.
+                        My journey started with a curiosity for how things work, leading me to explore
+                        both the software and hardware realms.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        My goal is to contribute to impactful projects that push the boundaries of
+                        current technology. I pride myself on my adaptability and quick learning skills.
+                    </p>
+                    <div class="strengths-grid">
+                        <div class="strength-item glass">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Fast Learner</h4>
+                        </div>
+                        <div class="strength-item glass">
+                            <i class="fas fa-users"></i>
+                            <h4>Team Player</h4>
+                        </div>
+                        <div class="strength-item glass">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Code</h4>
+                        </div>
+                        <div class="strength-item glass">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Creative</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass reveal">
+                    <h3><i class="fas fa-terminal"></i> Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span>75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Java</span><span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass reveal">
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML / CSS</span><span>95%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass reveal">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Spring Boot</span><span>80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js</span><span>70%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>TensorFlow</span><span>65%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass reveal">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Git / GitHub</span><span>95%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Figma</span><span>60%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>VS Code</span><span>100%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Database Skills -->
+                <div class="skill-card glass reveal">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span><span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQLite</span><span>80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Software Project 1 -->
+                <div class="project-card glass reveal">
+                    <img src="assets/project1.png" alt="Project 1" class="project-img">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">ML</span>
+                        </div>
+                        <h3>Wind Turbine Life Cycle Analysis</h3>
+                        <p>This project analyzes the environmental impact of bio-based resins as eco-friendly
+                            alternatives for wind turbine blades. It leverages machine learning with Python and
+                            TensorFlow to predict material degradation and recycling efficiency. Data processing is
+                            handled using Pandas and NumPy to optimize recycling strategies and reduce waste. The goal
+                            is to support a circular economy by providing data-driven insights into sustainable material
+                            management. Overall, it bridges the gap between material science and advanced predictive
+                            analytics for greener energy infrastructure.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Likithaharshini/lifecycle-impact-on-windturbines"
+                                class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Software Project 2 -->
+                <div class="project-card glass reveal">
+                    <img src="assets/project2.png" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                        </div>
+                        <h3>Online Examination Portal</h3>
+                        <p>A robust digital platform designed to automate the entire examination process from
+                            registration to results. Built with Java and Spring Boot, it ensures a secure and scalable
+                            backend for handling high-volume assessments efficiently. Students can register, attend
+                            exams, and receive instant results for immediate feedback and transparency. The admin module
+                            empowers authorized users to manage questions and monitor student performance in real-time.
+                            This system provides a modern and reliable solution for academic and professional online
+                            evaluation needs.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Likithaharshini/online_exam_application" class="project-link"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Software Project 3 -->
+                <div class="project-card glass reveal">
+                    <img src="assets/project3.png" alt="Project 3" class="project-img">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">java</span>
+                            <span class="tag">Spring Boot</span>
+                        </div>
+                        <h3>CareerCore</h3>
+                        <p>CareerCore is a smart job portal developed to simplify hiring by connecting job seekers with
+                            relevant opportunities. Engineered with Java and Spring Boot, it provides a secure and
+                            scalable architecture for modern recruitment. Features include an automated shortlisting
+                            system that filters candidates based on skills and predefined criteria. It enables employers
+                            to post job openings, review applications, and track candidates throughout the cycle. The
+                            platform enhances job matching accuracy while providing a streamlined experience for all
+                            users involved.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Likithaharshini/jobportal" class="project-link"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hardware Project -->
+                <div class="project-card glass reveal">
+                    <img src="assets/project4.png" alt="Alcohol Detection System" class="project-img">
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Arduino</span>
+                        </div>
+                        <h3>Alcohol Detection System</h3>
+                        <p>An IoT-based safety system designed to prevent accidents by detecting alcohol consumption in
+                            vehicle operators. It utilizes an MQ-3 Alcohol Sensor and Arduino Uno to monitor breath
+                            alcohol levels accurately in real-time. If alcohol is detected above safe limits, the system
+                            automatically blocks vehicle ignition via a relay module. Integrated buzzers and LEDs
+                            provide immediate visual and auditory alerts to the driver for enhanced safety. This
+                            hardware project promotes responsible driving habits and offers a reliable solution for
+                            global road safety.</p>
+                        <div class="project-links">
+                            <span style="color: var(--text-dim); font-size: 0.9rem;">No Github Link</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title reveal">Certifications</h2>
+            <div class="cert-grid">
+                <!-- Infosys Category -->
+                <div class="cert-card glass reveal">
+                    <div class="cert-icon-container">
+                        <i class="fas fa-building-columns"
+                            style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 15px;"></i>
+                    </div>
+                    <h4>Infosys Certificates</h4>
+                    <ul class="cert-list"
+                        style="list-style: none; padding: 0; margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <li onclick="openModal('assets/dv_certificate.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Data Visualisation</li>
+                        <li onclick="openModal('assets/machineLearning.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Machine Learning</li>
+                        <li onclick="openModal('assets/java.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Java Fundamentals</li>
+                        <li onclick="openModal('assets/networking.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Networking</li>
+                    </ul>
+                </div>
+                <!-- Udemy Category -->
+                <div class="cert-card glass reveal">
+                    <div class="cert-icon-container">
+                        <i class="fas fa-graduation-cap"
+                            style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 15px;"></i>
+                    </div>
+                    <h4>Udemy Certificates</h4>
+                    <ul class="cert-list"
+                        style="list-style: none; padding: 0; margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <li onclick="openModal('assets/ML and AI.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Machine Learning & AI</li>
+                        <li onclick="openModal('assets/Tableau.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Tableau Advanced</li>
+                        <li onclick="openModal('assets/python for analysis.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Python for Data Analysis</li>
+                        <li onclick="openModal('assets/azure .jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            Azure IoT</li>
+                    </ul>
+                </div>
+                <!-- Scalar Category -->
+                <div class="cert-card glass reveal">
+                    <div class="cert-icon-container">
+                        <i class="fas fa-laptop-code"
+                            style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 15px;"></i>
+                    </div>
+                    <h4>Scalar Certificates</h4>
+                    <ul class="cert-list"
+                        style="list-style: none; padding: 0; margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <li onclick="openModal('assets/dbms.jpeg')"
+                            style="background: rgba(255, 255, 255, 0.05); padding: 8px 18px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; font-size: 0.85rem; border: 1px solid rgba(255, 255, 255, 0.1); white-space: nowrap;">
+                            DBMS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Work Experience</h2>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <h4>Software Intern</h4>
+                        <p style="color: var(--accent-primary);">Gradtwin </p>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 10px;">June 2025 - August
+                            2025</p>
+                        <ul>
+                            <li>Developed Machine learning project"lifecycle imppact of bioresins in windturbines".</li>
+                            <li>Understood the concepts of ML like data preprocessing, model building and evaluation.
+                            </li>
+                            <li>Collaborated with the technical team to understand the project requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p style="color: var(--text-dim); margin: 20px 0;">
+                        Feel free to reach out for collaborations or just a friendly hello!
+                    </p>
+                    <div style="margin-bottom: 30px;">
+                        <p><i class="fas fa-envelope" style="color: var(--accent-primary); width: 30px;"></i>
+                            likkireddy9014@gmail.com</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-primary); width: 30px;"></i> +91
+                            9391881149</p>
+                        <p><i class="fas fa-location-dot" style="color: var(--accent-primary); width: 30px;"></i>
+                            Nandyal,Andhra Pradesh</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Likithaharshini" class="social-icon" title="GitHub" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/likithaharshini/" class="social-icon" title="LinkedIn"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/Vtu26654/" class="social-icon" title="LeetCode" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="your mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Hi, I'd like to talk about..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Developed and Designed by Likitha</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.5;">@2026</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal"
+        style="display: none; position: fixed; inset: 0; z-index: 2000; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; cursor: pointer;"
+        onclick="closeModal()">
+        <img id="modalImg" src=""
+            style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 50px rgba(0,242,255,0.5);">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
