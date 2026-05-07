@@ -180,7 +180,8 @@ nav.sticky {
 .hero-content .intro {
     max-width: 600px;
     color: var(--text-dim);
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    text-align: center;
 }
 
 .cta-buttons {
