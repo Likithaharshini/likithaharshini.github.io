@@ -18,7 +18,7 @@
         }
     </style>
 </head>
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <body>
     <!-- Background Elements -->
     <div class="bg-gradient"></div>
@@ -437,19 +437,36 @@
                             rel="noopener noreferrer"><i class="fas fa-code"></i></a>
                     </div>
                 </div>
-                <form class="contact-form glass">
+                <form id="contact-form" class="contact-form glass">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required placeholder="your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required placeholder="your mail">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" required placeholder="Hi, I'd like to talk about..."></textarea>
-                    </div>
+    <label for="name">Name</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="your name">
+</div>
+
+<div class="form-group">
+    <label for="email">Email</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="your mail">
+</div>
+
+<div class="form-group">
+    <label for="message">Message</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        required
+        placeholder="Hi, I'd like to talk about..."></textarea>
+</div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                 </form>
             </div>

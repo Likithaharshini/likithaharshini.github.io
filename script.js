@@ -62,14 +62,47 @@ function closeModal() {
 }
 
 // Form Submission (Placeholder)
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for your message! This is a demo, so no email was actually sent.');
+// EmailJS Contact Form
+
+emailjs.init("z7tUVPfs0CvMhSzkK");
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const button = contactForm.querySelector("button");
+
+    button.innerText = "Sending...";
+    button.disabled = true;
+
+    emailjs.sendForm(
+        "service_7yy40na",
+        "template_hqlfcbr",
+        this
+    )
+    .then(() => {
+
+        alert("Message sent successfully!");
+
         contactForm.reset();
+
+        button.innerText = "Send Message";
+        button.disabled = false;
+
+    })
+    .catch((error) => {
+
+        console.error(error);
+
+        alert("Failed to send message. Please try again.");
+
+        button.innerText = "Send Message";
+        button.disabled = false;
     });
-}
+
+});
 
 // Back to Top Button logic could be added here
 // Smooth scroll for internal links is handled by browser defaults in modern CSS, but can be reinforced here
