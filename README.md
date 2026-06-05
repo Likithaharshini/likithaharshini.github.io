@@ -1,3 +1,5 @@
+
+
 # 🌐 Personal Portfolio Website
 
 ## 📌 Overview
@@ -72,7 +74,7 @@ Portfolio/
 Aspiring Software Engineer | Java | Python | SQL | Web Development
 
 LinkedIn:
-www.linkedin.com/in/likitha-kondabathina-53439a251
+https://www.linkedin.com/in/likithaharshini/
 
 ## ⭐ Support
 
